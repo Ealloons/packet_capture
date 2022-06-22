@@ -1,9 +1,11 @@
 # packet_capture
 ## capture
-The program in the capture folder captures the packets and stores them in the database. <br>
-This program uses the pcap library and mysql library.
+캡처 폴더의 c 프로그램은 패킷을 캡처하여 db에 저장합니다.
+기본적으로 출발지와 목적지의 ip와 mac을 저장하고, 서비스 포트까지 저장합니다.
+패킷 헤더의 다른 정보가 필요하다면, 쉽게 확장할 수 있습니다.
 ## db
-The php files in the db folder can be uploaded to the user's web server so that the captured packets can be viewed on other platforms. <br>
-This program uses PDO to connect to mysql.
+db폴더의 php 파일들은 사용자가 웹에 업로드하여 mysql에 접속 가능하게 합니다.
+이는 캡처된 패킷을 웹이나 앱에서 확인할 수 있게 도와줍니다.
+
 ## how to use
-Only part the user needs to change is the account information in the database.
+위의 프로그램들을 사용하기 위해서는 각 파일에 mysql 계정 정보만 업로드하면 됩니다.
